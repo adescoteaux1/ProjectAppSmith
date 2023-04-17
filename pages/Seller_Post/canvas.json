@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 510,
+          "bottomRow": 580,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -29,15 +29,15 @@
             {
               "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "borderColor": "#E0DEDE",
-              "widgetName": "Form1",
+              "widgetName": "new_post_form",
               "isCanvas": true,
               "displayName": "Form",
               "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
               "searchTags": [
                 "group"
               ],
-              "topRow": 12,
-              "bottomRow": 51,
+              "topRow": 19,
+              "bottomRow": 58,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -45,7 +45,7 @@
               "animateLoading": true,
               "parentColumnSpace": 10.1875,
               "dynamicTriggerPathList": [],
-              "leftColumn": 10,
+              "leftColumn": 7,
               "dynamicBindingPathList": [],
               "children": [
                 {
@@ -63,7 +63,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "widgetName": "new_post_form",
+                      "widgetName": "new_post_form_title",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -93,7 +93,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "New Post",
+                      "text": "Add New Post",
                       "key": "0d1y5jso76",
                       "isDeprecated": false,
                       "rightColumn": 25.5,
@@ -117,7 +117,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1",
+                      "widgetName": "submit_button",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -164,7 +164,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2",
+                      "widgetName": "reset_button",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -470,7 +470,7 @@
               "key": "y00wvv3daz",
               "backgroundColor": "#d4d4d8",
               "isDeprecated": false,
-              "rightColumn": 60,
+              "rightColumn": 57,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "6atahgwnb0",
               "minWidth": 450,
@@ -479,10 +479,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 12,
+              "originalTopRow": 19,
               "borderRadius": "1.5rem",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 51,
+              "originalBottomRow": 58,
               "minDynamicHeight": 10
             }
           ]
