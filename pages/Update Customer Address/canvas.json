@@ -43,7 +43,7 @@
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 0,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -52,7 +52,7 @@
               "isDisabled": false,
               "key": "8y6ce3p3jy",
               "isDeprecated": false,
-              "rightColumn": 10,
+              "rightColumn": 11,
               "iconName": "person",
               "widgetId": "6su697xewa",
               "minWidth": 50,
