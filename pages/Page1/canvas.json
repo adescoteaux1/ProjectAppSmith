@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 730,
+          "bottomRow": 580,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -33,7 +33,7 @@
               "topRow": 4,
               "type": "JSON_FORM_WIDGET",
               "animateLoading": true,
-              "leftColumn": 26,
+              "leftColumn": 37,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -313,7 +313,7 @@
               "key": "rvadfvx3cd",
               "backgroundColor": "#fff",
               "isDeprecated": false,
-              "rightColumn": 51,
+              "rightColumn": 62,
               "widgetId": "x1zhiy6bxm",
               "minWidth": 450,
               "parentId": "0",
@@ -458,7 +458,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 45,
+              "topRow": 30,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -496,7 +496,7 @@
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 6,
+              "leftColumn": 0,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -545,7 +545,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 73,
+              "bottomRow": 58,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -653,7 +653,7 @@
               "key": "gxrdvg9r6n",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 40,
+              "rightColumn": 30,
               "textSize": "0.875rem",
               "widgetId": "uxeaa7mph2",
               "minWidth": 450,
