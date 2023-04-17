@@ -3,6 +3,10 @@
     {
       "id": "Seller_Post",
       "isDefault": true
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -11,6 +15,9 @@
   "color": "#E3DEFF",
   "icon": "shopper",
   "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
     "type": "FLUID"
   },
   "unpublishedCustomJSLibs": [],
