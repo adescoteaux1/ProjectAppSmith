@@ -3,6 +3,10 @@
     {
       "id": "Seller_Post",
       "isDefault": true
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
     }
   ],
   "viewMode": false,
