@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "Seller_Post",
       "isDefault": true
     }
   ],
@@ -9,6 +9,10 @@
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "color": "#E3DEFF",
+  "icon": "shopper",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
