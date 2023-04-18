@@ -304,11 +304,7 @@
               "parentColumnSpace": 10.1875,
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
-              "sourceData": {
-                "name": "John",
-                "date_of_birth": "20/02/1990",
-                "employee_id": 1001
-              },
+              "sourceData": "{\n  first_name:\n\tlast_name:\n\tsellerID:\n\tphone: \n\temail:\n}\n",
               "resetButtonLabel": "Reset",
               "key": "rvadfvx3cd",
               "backgroundColor": "#fff",
