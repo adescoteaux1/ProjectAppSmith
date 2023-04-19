@@ -639,7 +639,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "All Products",
+              "text": "Browse Products",
               "key": "pv5433929e",
               "isDeprecated": false,
               "rightColumn": 41,

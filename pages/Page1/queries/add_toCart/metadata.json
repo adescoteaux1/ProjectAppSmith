@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{\n\"productID\";\"currentItem.productID\"\n}}/",
+      "body": "{{\n\"productID\";\"currentItem.productID\"\n}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
