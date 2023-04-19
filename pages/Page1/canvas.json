@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1390,
+          "bottomRow": 1350,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
@@ -30,7 +30,7 @@
               "requiresFlatWidgetChildren": true,
               "isCanvas": true,
               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-              "topRow": 21,
+              "topRow": 17,
               "pageSize": 7,
               "type": "LIST_WIDGET_V2",
               "itemSpacing": 8,
@@ -159,13 +159,13 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "leftColumn": 1,
+                              "leftColumn": 4,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{currentItem.product_name}}",
+                              "text": "Product Name: {{currentItem.product_name}}",
                               "key": "gozu6kuvxm",
                               "isDeprecated": false,
-                              "rightColumn": 13,
+                              "rightColumn": 30,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "x90psh5tkb",
@@ -194,8 +194,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 4,
-                              "bottomRow": 8,
+                              "topRow": 5,
+                              "bottomRow": 12,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -216,20 +216,20 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "leftColumn": 1,
+                              "leftColumn": 16,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "text": "{{currentItem.descr}}",
                               "key": "gozu6kuvxm",
                               "isDeprecated": false,
-                              "rightColumn": 42,
+                              "rightColumn": 50,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "1uuxf20av4",
                               "minWidth": 450,
                               "isVisible": true,
-                              "fontStyle": "BOLD",
-                              "textColor": "#231F20",
+                              "fontStyle": "ITALIC",
+                              "textColor": "#18181b",
                               "version": 1,
                               "parentId": "zk0p08amcs",
                               "renderMode": "CANVAS",
@@ -260,7 +260,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 9.8251953125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 19,
+                              "leftColumn": 32,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -280,7 +280,7 @@
                               "text": "${{currentItem.unitPrice}}",
                               "key": "pv5433929e",
                               "isDeprecated": false,
-                              "rightColumn": 27,
+                              "rightColumn": 40,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "bhc7j3f2tm",
@@ -299,66 +299,9 @@
                               "minDynamicHeight": 4
                             },
                             {
-                              "widgetName": "product_image_url",
-                              "displayName": "Text",
-                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                              "searchTags": [
-                                "typography",
-                                "paragraph",
-                                "label"
-                              ],
-                              "topRow": 9,
-                              "bottomRow": 13,
-                              "parentRowSpace": 10,
-                              "type": "TEXT_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "overflow": "NONE",
-                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                              "parentColumnSpace": 9.8251953125,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 1,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "truncateButtonColor"
-                                },
-                                {
-                                  "key": "fontFamily"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "text"
-                                }
-                              ],
-                              "shouldTruncate": false,
-                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "{{currentItem.picture}}",
-                              "key": "pv5433929e",
-                              "isDeprecated": false,
-                              "rightColumn": 43,
-                              "textAlign": "LEFT",
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "8ogl5aobyq",
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "fontStyle": "BOLD",
-                              "textColor": "#231F20",
-                              "version": 1,
-                              "parentId": "zk0p08amcs",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "fontSize": "1rem",
-                              "minDynamicHeight": 4
-                            },
-                            {
                               "boxShadow": "none",
                               "widgetName": "Add_to_cart_button",
-                              "onClick": "{{add_toCart.run(() => postWindowMessage('\"Added to Cart\"', 'window', '*'), () => {})}}",
+                              "onClick": "{{add_toCart.run()}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -368,6 +311,7 @@
                               ],
                               "topRow": 8,
                               "bottomRow": 12,
+                              "tooltip": "",
                               "parentRowSpace": 10,
                               "type": "ICON_BUTTON_WIDGET",
                               "hideCard": false,
@@ -378,7 +322,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 51,
+                              "leftColumn": 55,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -390,7 +334,7 @@
                               "isDisabled": false,
                               "key": "n6wjnld475",
                               "isDeprecated": false,
-                              "rightColumn": 55,
+                              "rightColumn": 59,
                               "iconName": "plus",
                               "dynamicHeight": "FIXED",
                               "widgetId": "x4br8y422j",
@@ -422,7 +366,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 9.8251953125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 49,
+                              "leftColumn": 52,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -439,7 +383,7 @@
                               "text": "Add to Cart",
                               "key": "pv5433929e",
                               "isDeprecated": false,
-                              "rightColumn": 60,
+                              "rightColumn": 63,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "10m97k682k",
@@ -476,7 +420,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 9.8251953125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 37,
+                              "leftColumn": 45,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -496,7 +440,7 @@
                               "text": "Seller: {{currentItem.first_name}} {{currentItem.last_name}}",
                               "key": "2ohxj0sv1x",
                               "isDeprecated": false,
-                              "rightColumn": 53,
+                              "rightColumn": 64,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "81rp8tcxge",
@@ -513,6 +457,47 @@
                               "maxDynamicHeight": 9000,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Image1",
+                              "displayName": "Image",
+                              "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
+                              "topRow": 4,
+                              "bottomRow": 13,
+                              "parentRowSpace": 10,
+                              "type": "IMAGE_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.8251953125,
+                              "dynamicTriggerPathList": [],
+                              "imageShape": "RECTANGLE",
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultImage"
+                                }
+                              ],
+                              "defaultImage": "{{currentItem.picture}}",
+                              "key": "2rjne3b6dz",
+                              "image": "",
+                              "isDeprecated": false,
+                              "rightColumn": 10,
+                              "objectFit": "cover",
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "37ipzrydqu",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "zk0p08amcs",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "maxZoomLevel": 1,
+                              "enableDownload": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "enableRotation": false
                             }
                           ],
                           "key": "ymlmg3gmbf",
@@ -595,7 +580,7 @@
                 }
               ],
               "displayName": "List",
-              "bottomRow": 139,
+              "bottomRow": 135,
               "parentRowSpace": 10,
               "hideCard": false,
               "templateBottomRow": 16,
@@ -724,11 +709,11 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "Select1",
+              "widgetName": "select_customer_name",
               "isFilterable": true,
               "displayName": "Select",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-              "labelText": "Label",
+              "labelText": "Enter Customer Name",
               "searchTags": [
                 "dropdown"
               ],
@@ -739,7 +724,7 @@
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
               "hideCard": false,
-              "defaultOptionValue": "GREEN",
+              "defaultOptionValue": "",
               "animateLoading": true,
               "parentColumnSpace": 10.59375,
               "dynamicTriggerPathList": [],
@@ -756,7 +741,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "options": "{{customer_id_name_pairs.data}}",
+              "options": "{{customer_id_get_namepairs.data}}",
               "placeholderText": "Select option",
               "isDisabled": false,
               "key": "15sojgcn5p",
@@ -786,6 +771,14 @@
             {
               "id": "Page1_Get_Products",
               "name": "Get_Products",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_customer_id_get_namepairs",
+              "name": "customer_id_get_namepairs",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],

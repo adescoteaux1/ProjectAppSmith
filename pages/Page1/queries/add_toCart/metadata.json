@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "secondchance-web:4000/c//customers/<customerID>/cart"
+        "url": "secondchance-web:4000/c//customers/{{select_customer_name.selectedOptionValue}}/cart"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{\n\"productID\";\"currentItem.productID\"\n}}",
+      "body": "{{\n\"productID\";\"currentItem.productID\"\n}}/",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -46,13 +46,17 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "\n\"productID\";\"currentItem.productID\"\n"
+      "\n\"productID\";\"currentItem.productID\"\n",
+      "select_customer_name.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
