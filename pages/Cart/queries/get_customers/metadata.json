@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_cart",
+    "name": "get_customers",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "secondchance-web:4000/c/customers/{{customer_query.data}}/viewcart"
+        "url": "secondchance-web:4000/c/customers"
       },
       "invalids": [],
       "messages": [],
@@ -45,15 +45,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "customer_query.data"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Cart_get_cart",
+  "id": "Cart_get_customers",
   "deleted": false,
-  "gitSyncId": "643ef484b3f0750e6ab41a7d_643ef723b3f0750e6ab41a87"
+  "gitSyncId": "643ef484b3f0750e6ab41a7d_643ffd97a3b9287c00956f13"
 }
