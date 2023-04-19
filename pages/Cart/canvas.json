@@ -76,8 +76,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 5,
+                      "topRow": 6,
+                      "bottomRow": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -132,8 +132,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 30,
-                      "bottomRow": 34,
+                      "topRow": 31,
+                      "bottomRow": 35,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -177,8 +177,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 30,
-                      "bottomRow": 34,
+                      "topRow": 31,
+                      "bottomRow": 35,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -218,7 +218,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 6,
+                      "topRow": 10,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -299,7 +299,7 @@
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 34,
+                      "bottomRow": 38,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -308,7 +308,11 @@
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "parentColumnSpace": 8.0205078125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onRowSelected"
+                        }
+                      ],
                       "borderWidth": "1",
                       "primaryColumns": {
                         "Description": {
@@ -428,6 +432,7 @@
                           "cellBackground": ""
                         }
                       },
+                      "onRowSelected": "{{get_cart.run()}}",
                       "key": "kbsrhesbau",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
@@ -458,8 +463,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 7,
-                      "bottomRow": 14,
+                      "topRow": 10,
+                      "bottomRow": 17,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -517,8 +522,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 15,
-                      "bottomRow": 22,
+                      "topRow": 17,
+                      "bottomRow": 24,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -576,8 +581,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 22,
-                      "bottomRow": 29,
+                      "topRow": 24,
+                      "bottomRow": 31,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -888,6 +893,63 @@
                       "responsiveBehavior": "fill",
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Select1",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "Label",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 6,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "GREEN",
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.0205078125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 6,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "options": "{{Api1.data}}",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "czr9vtphj2",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 43,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "xh9aydcceb",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "atx4srtno1",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 4
                     }
                   ],
                   "key": "2apqcczotf",
@@ -931,13 +993,11 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Cart_get_cart",
-              "name": "get_cart",
+              "id": "Cart_Api1",
+              "name": "Api1",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [
-                "customer_query.data"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
