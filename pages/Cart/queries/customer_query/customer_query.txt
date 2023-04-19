@@ -1,3 +1,0 @@
-select all_customers.customerID
-FROM {{all_customers}}
-WHERE first_name = {{insert_customer_firstname.text}} AND last_name = {{insert_customer_lastname.text}} AND phone = {{insert_customer_phone.text}};
