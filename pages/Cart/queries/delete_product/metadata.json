@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "secondchance-web:4000/c/customers/{{select_customer_name.selectedOptionValue}}/viewcart"
+        "url": "secondchance-web:4000/c/customers/{{select_customer_name.selectedOptionValue}}/cart/{{cart_list.selectedItem.ProductID}}"
       },
       "invalids": [],
       "messages": [],
@@ -43,11 +43,16 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "cart_list.selectedItem.ProductID",
       "select_customer_name.selectedOptionValue"
     ],
     "userSetOnLoad": false,

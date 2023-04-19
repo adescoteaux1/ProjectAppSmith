@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_products",
+    "name": "product_id_name_pairs",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "secondchance-web:4000/c/customer/products"
+        "url": "secondchance-web:4000/c/customers/products/namepairs"
       },
       "invalids": [],
       "messages": [],
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Cart_get_products",
+  "id": "Cart_product_id_name_pairs",
   "deleted": false,
-  "gitSyncId": "643ef484b3f0750e6ab41a7d_6440666d22669d2daf76f8d1"
+  "gitSyncId": "643ef484b3f0750e6ab41a7d_644069b2c9c2063e36ed940c"
 }
