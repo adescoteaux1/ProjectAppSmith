@@ -18,11 +18,11 @@
     },
     {
       "id": "HomePage",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Seller HomePage",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "CustomerHomePG",
