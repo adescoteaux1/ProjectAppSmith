@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "secondchance-web:4000/c/customers/1/email"
+        "url": "secondchance-web:4000/c/customers/1/address"
       },
       "invalids": [],
       "messages": [],
