@@ -1,3 +1,11 @@
+### SecondChanceCo
+
+This application is for SecondChanceCo, an online marketplace for secondhand clothing. Individuals can upload photos and descriptions of their items and sell them to others. By providing a platform for people to resell their clothes, it offers an economically feasible alternative for individuals who cannot afford to buy brand new clothing at retail prices. 
+
+SecondChanceCo promotes sustainable fashion by reducing the demand for mass production of new clothing items, helping minimize the environmental impact of the fashion industry, which is known to be one of the largest polluting industries in the world. By reducing the demand for the mass-production of clothing items, SecondChanceCo can help minimize the exploitation of workers in production environments (especially fast-fashion). The website counteracts the fast fashion industry by promoting a more sustainable approach to fashion, and acts as a more accessible option for people to buy and sell second hand clothing, eliminating the need to physically go to a thrift store.
+
+The application for SecondChanceCo was designed and implemented by Alexandra Descoteaux, Sreeya Gudlavalleti, Angela Fee, Jennifer Cheung, and deployed on April 20th 2023. 
+
 ![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
 
 This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
