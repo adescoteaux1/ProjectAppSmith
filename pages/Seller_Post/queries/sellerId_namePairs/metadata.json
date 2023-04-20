@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "customer_id_name_pairs",
+    "name": "sellerId_namePairs",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "secondchance-web:4000/c/customers/namepairs"
+        "url": "secondchance-web:4000/s/sellers/namepairs"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Cart",
+    "pageId": "Seller_Post",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Cart_customer_id_name_pairs",
+  "id": "Seller_Post_sellerId_namePairs",
   "deleted": false,
-  "gitSyncId": "643ef484b3f0750e6ab41a7d_64404c5e22669d2daf76f8b9"
+  "gitSyncId": "643d5ca87cdcd42eb84ff80b_64408e2ac19c620ff61fa0f2"
 }

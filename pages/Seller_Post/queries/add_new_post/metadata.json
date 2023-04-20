@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "secondchance-web:4000/s/seller/1/products"
+        "url": "secondchance-web:4000/s/seller/{{select_seller_name.selectedOptionValue}}/products"
       },
       "invalids": [],
       "messages": [],
@@ -46,13 +46,17 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "new_post.data"
+      "new_post.data",
+      "select_seller_name.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
