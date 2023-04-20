@@ -177,32 +177,19 @@
                       "responsiveBehavior": "fill",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "{{get_cart.run()}}",
+                      "onOptionChange": "{{get_cart.run(() => get_totalprice.run(), () => {})}}",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "currentItemsView": "{{[]}}",
-                      "triggeredItemView": "{{{}}}",
-                      "widgetName": "cart_list",
                       "requiresFlatWidgetChildren": true,
-                      "listData": "{{get_cart.data}}",
                       "isCanvas": true,
-                      "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                       "topRow": 16,
-                      "bottomRow": 69,
                       "pageSize": 4,
-                      "parentRowSpace": 10,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": 8,
-                      "hideCard": false,
-                      "templateBottomRow": 16,
-                      "mainContainerId": "npx5d7gy9s",
                       "animateLoading": true,
-                      "primaryKeys": "{{cart_list.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
-                      "parentColumnSpace": 8.0205078125,
-                      "dynamicTriggerPathList": [],
                       "dynamicBindingPathList": [
                         {
                           "key": "currentItemsView"
@@ -230,7 +217,6 @@
                         }
                       ],
                       "leftColumn": 1,
-                      "gridType": "vertical",
                       "enhancements": true,
                       "children": [
                         {
@@ -483,7 +469,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "${{currentItem.uPrice}}",
+                                      "text": "${{Number(currentItem.uPrice).toFixed(2)}}",
                                       "key": "lbvnu4blb1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -606,22 +592,12 @@
                           "flexLayers": []
                         }
                       ],
-                      "positioning": "fixed",
-                      "key": "zuucdkqy5z",
-                      "backgroundColor": "transparent",
-                      "isDeprecated": false,
-                      "rightColumn": 64,
                       "itemBackgroundColor": "#FFFFFF",
-                      "widgetId": "svz6d0c90f",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
-                      "parentId": "atx4srtno1",
                       "hasMetaWidgets": true,
-                      "renderMode": "CANVAS",
                       "isLoading": false,
-                      "responsiveBehavior": "fill",
                       "mainCanvasId": "hzgnuqf4bl",
-                      "originalTopRow": 16,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "originalBottomRow": 69,
                       "additionalStaticProps": [
@@ -630,10 +606,39 @@
                         "prefixMetaWidgetId",
                         "metaWidgetId"
                       ],
+                      "currentItemsView": "{{[]}}",
+                      "triggeredItemView": "{{{}}}",
+                      "widgetName": "cart_list",
+                      "listData": "{{get_cart.data}}",
+                      "displayName": "List",
+                      "bottomRow": 69,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "templateBottomRow": 16,
+                      "mainContainerId": "npx5d7gy9s",
+                      "primaryKeys": "{{cart_list.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
+                      "parentColumnSpace": 8.0205078125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onItemClick"
+                        }
+                      ],
+                      "gridType": "vertical",
+                      "positioning": "fixed",
+                      "key": "zuucdkqy5z",
+                      "backgroundColor": "transparent",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "widgetId": "svz6d0c90f",
+                      "onItemClick": "{{get_totalprice.run()}}",
+                      "parentId": "atx4srtno1",
+                      "renderMode": "CANVAS",
+                      "responsiveBehavior": "fill",
+                      "originalTopRow": 16,
                       "selectedItemView": "{{{}}}"
                     },
                     {
-                      "widgetName": "Text1",
+                      "widgetName": "total_price",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -641,8 +646,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 8,
-                      "bottomRow": 12,
+                      "topRow": 7,
+                      "bottomRow": 11,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -651,7 +656,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 9.885009765625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 32,
+                      "leftColumn": 54,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -668,10 +673,10 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{get_totalprice.data}}",
+                      "text": "${{get_totalprice.data[0].TotalPrice}}",
                       "key": "lbvnu4blb1",
                       "isDeprecated": false,
-                      "rightColumn": 59,
+                      "rightColumn": 62,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "xd7ubp5mlq",
@@ -684,10 +689,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 8,
+                      "originalTopRow": 7,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 12,
+                      "originalBottomRow": 11,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -785,16 +790,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Cart_get_totalprice",
-              "name": "get_totalprice",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "select_customer_name.selectedOptionValue"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
