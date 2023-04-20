@@ -11,6 +11,22 @@
     {
       "id": "Update Customer Address",
       "isDefault": false
+    },
+    {
+      "id": "Page2",
+      "isDefault": false
+    },
+    {
+      "id": "HomePage",
+      "isDefault": false
+    },
+    {
+      "id": "Seller HomePage",
+      "isDefault": false
+    },
+    {
+      "id": "CustomerHomePG",
+      "isDefault": false
     }
   ],
   "viewMode": false,
