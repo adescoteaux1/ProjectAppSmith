@@ -117,6 +117,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1",
+              "onClick": "{{navigateTo('Update Customer Address', {}, 'SAME_WINDOW')}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -132,7 +133,11 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 11.296854972839355,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "leftColumn": 12,
               "dynamicBindingPathList": [
                 {
@@ -168,7 +173,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button2",
-              "onClick": "{{navigateTo('', {}, 'SAME_WINDOW')}}",
+              "onClick": "{{navigateTo('Browse All Products', {}, 'SAME_WINDOW')}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
