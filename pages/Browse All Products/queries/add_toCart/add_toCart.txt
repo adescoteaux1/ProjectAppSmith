@@ -1,0 +1,4 @@
+{
+"productID":
+	{{all_products.selectedItem.productID}}
+}
