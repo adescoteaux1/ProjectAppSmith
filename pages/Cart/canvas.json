@@ -98,7 +98,7 @@
                       "text": "View and Edit your Cart",
                       "key": "izyo2867i2",
                       "isDeprecated": false,
-                      "rightColumn": 34,
+                      "rightColumn": 32,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "rzhfesup5n",
@@ -621,9 +621,9 @@
                       "isLoading": false,
                       "responsiveBehavior": "fill",
                       "mainCanvasId": "hzgnuqf4bl",
-                      "originalTopRow": 23,
+                      "originalTopRow": 16,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 76,
+                      "originalBottomRow": 69,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -641,8 +641,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 11,
-                      "bottomRow": 15,
+                      "topRow": 8,
+                      "bottomRow": 12,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -651,7 +651,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 9.885009765625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 34,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -671,7 +671,7 @@
                       "text": "{{get_totalprice.data}}",
                       "key": "lbvnu4blb1",
                       "isDeprecated": false,
-                      "rightColumn": 61,
+                      "rightColumn": 59,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "xd7ubp5mlq",
@@ -684,10 +684,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 11,
+                      "originalTopRow": 8,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 22,
+                      "originalBottomRow": 12,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
