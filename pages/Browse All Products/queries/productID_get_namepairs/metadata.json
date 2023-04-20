@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Browse All Products",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_productID_get_namepairs",
+  "id": "Browse All Products_productID_get_namepairs",
   "deleted": false,
   "gitSyncId": "643ef7890aa66c3bb6941078_6440658e8bae83561d936a04"
 }
