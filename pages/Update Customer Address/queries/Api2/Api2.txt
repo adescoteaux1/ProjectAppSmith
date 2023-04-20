@@ -1,0 +1,6 @@
+{
+  "city": "{{Change_Address1.inputText}}",
+  "state": "{{Change_state.inputText}}",
+  "country": "{{Change_country.inputText}}",
+  "zip": "{{Change_zip.inputText}}"
+}
