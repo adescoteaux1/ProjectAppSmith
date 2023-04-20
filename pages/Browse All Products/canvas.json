@@ -339,7 +339,7 @@
                               "dynamicHeight": "FIXED",
                               "widgetId": "x4br8y422j",
                               "minWidth": 50,
-                              "isVisible": false,
+                              "isVisible": true,
                               "version": 1,
                               "parentId": "zk0p08amcs",
                               "renderMode": "CANVAS",
