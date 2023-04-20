@@ -88,7 +88,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 14,
+              "leftColumn": 13,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -97,7 +97,7 @@
               "isDisabled": false,
               "key": "7q9fiiuzgn",
               "isDeprecated": false,
-              "rightColumn": 18,
+              "rightColumn": 17,
               "iconName": "menu",
               "widgetId": "6qop5a09og",
               "minWidth": 50,
@@ -132,7 +132,7 @@
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
               "resetOnSubmit": true,
-              "leftColumn": 18,
+              "leftColumn": 17,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -150,7 +150,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 52,
+              "rightColumn": 51,
               "dynamicHeight": "FIXED",
               "widgetId": "rzglgegu7h",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -188,7 +188,7 @@
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 52,
+              "leftColumn": 51,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -200,7 +200,7 @@
               "isDisabled": false,
               "key": "7q9fiiuzgn",
               "isDeprecated": false,
-              "rightColumn": 56,
+              "rightColumn": 55,
               "iconName": "search",
               "widgetId": "lb6ozy4gb7",
               "minWidth": 50,
@@ -215,6 +215,7 @@
             {
               "boxShadow": "none",
               "widgetName": "IconButton4",
+              "onClick": "{{navigateTo('Cart', {}, 'SAME_WINDOW')}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -229,8 +230,12 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 56,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 55,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -242,7 +247,7 @@
               "isDisabled": false,
               "key": "7q9fiiuzgn",
               "isDeprecated": false,
-              "rightColumn": 60,
+              "rightColumn": 59,
               "iconName": "shopping-cart",
               "widgetId": "f1ii3undus",
               "minWidth": 50,
@@ -1296,10 +1301,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 18,
+              "originalTopRow": 19,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 31,
+              "originalBottomRow": 32,
               "fontSize": "3rem",
               "minDynamicHeight": 4
             },
@@ -1549,6 +1554,53 @@
               "responsiveBehavior": "fill",
               "originalTopRow": 42,
               "originalBottomRow": 46
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "IconButton5",
+              "onClick": "{{navigateTo('CustomerHomePG', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 5,
+              "bottomRow": 9,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 10.59375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 59,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "4pyb0f9mb3",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "iconName": "home",
+              "widgetId": "ekdhut59sl",
+              "minWidth": 50,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY"
             }
           ]
         },

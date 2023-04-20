@@ -2,7 +2,7 @@
   "pages": [
     {
       "id": "Seller_Post",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Browse All Products",
@@ -22,7 +22,7 @@
     },
     {
       "id": "Seller HomePage",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "CustomerHomePG",
